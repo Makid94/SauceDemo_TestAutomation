@@ -38,7 +38,11 @@ jobs:
 
       # Step 5: Install Playwright Browsers
       - name: Install Playwright Browsers
-        run: npx playwright install --with-deps
+        run: |
+          npx playwright install --with-deps
+          npx playwright install chrome
+          npx playwright install firefox
+          npx playwright install webkit
 
       # Step 6: Install Allure Command Line
       - name: Install Allure Command Line
