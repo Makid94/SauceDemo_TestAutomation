@@ -1,0 +1,53 @@
+  pw:api => selectors.setTestIdAttribute started +0ms
+  pw:api => browserType.launch started +8ms
+  pw:api <= selectors.setTestIdAttribute succeeded +12ms
+  pw:api <= browserType.launch succeeded +162ms
+  pw:api => browser.newContext started +12ms
+  pw:api navigating to "https://www.saucedemo.com/", waiting until "load" +309ms
+  pw:api   "commit" event fired +22ms
+  pw:api   navigated to "https://www.saucedemo.com/" +0ms
+  pw:api   "domcontentloaded" event fired +11ms
+  pw:api   "load" event fired +1ms
+  pw:api <= browser.newContext succeeded +22ms
+  pw:api => browserContext.newPage started +27ms
+  pw:api <= browserContext.newPage succeeded +101ms
+  pw:api => page.goto started +6ms
+  pw:api navigating to "https://www.saucedemo.com/inventory.html", waiting until "load" +28ms
+  pw:api   "commit" event fired +263ms
+  pw:api   navigated to "https://www.saucedemo.com/inventory.html" +0ms
+  pw:api   "commit" event fired +96ms
+  pw:api   navigated to "https://www.saucedemo.com/?/inventory.html" +1ms
+  pw:api   navigated to "https://www.saucedemo.com/inventory.html" +23ms
+  pw:api   "domcontentloaded" event fired +543ms
+  pw:api   "load" event fired +534ms
+  pw:api <= page.goto succeeded +30ms
+  pw:api => locator.click started +18ms
+  pw:api waiting for locator('.product_sort_container') +47ms
+  pw:api   locator resolved to <select class="product_sort_container" data-test="product-sort-container">…</select> +57ms
+  pw:api attempting click action +6ms
+  pw:api   waiting for element to be visible, enabled and stable +1ms
+  pw:api   element is visible, enabled and stable +41ms
+  pw:api   scrolling into view if needed +0ms
+  pw:api   done scrolling +7ms
+  pw:api   performing click action +21ms
+  pw:api   click action done +117ms
+  pw:api   waiting for scheduled navigations to finish +0ms
+  pw:api   navigations have finished +7ms
+  pw:api <= locator.click succeeded +18ms
+  pw:api => locator.selectOption started +2ms
+  pw:api waiting for locator('.product_sort_container') +14ms
+  pw:api   locator resolved to <select class="product_sort_container" data-test="product-sort-container">…</select> +20ms
+  pw:api attempting select option action +6ms
+  pw:api   waiting for element to be visible and enabled +15ms
+  pw:api   selected specified option(s) +25ms
+  pw:api <= locator.selectOption succeeded +31ms
+  pw:api => locator.allTextContents started +3ms
+  pw:api   "networkidle" event fired +15ms
+  pw:api <= locator.allTextContents succeeded +72ms
+  pw:api => locator.allTextContents started +3ms
+  pw:api <= locator.allTextContents succeeded +29ms
+  pw:api => page.screenshot started +25ms
+  pw:api taking page screenshot +21ms
+  pw:api waiting for fonts to load... +12ms
+  pw:api fonts loaded +7ms
+  pw:api <= page.screenshot succeeded +188ms

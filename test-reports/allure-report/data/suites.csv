@@ -1,5 +1,0 @@
-"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
-"","3031","Add multiple items to the cart and validate the checkout journey","DesktopChrome","Tue Dec 31 17:00:36 BDT 2024","passed","Tue Dec 31 17:00:39 BDT 2024","","test-modules\workspace\my-worklist\feature.spec.ts","",""
-"","2519","Verify high-low price order on the All Items page","DesktopChrome","Tue Dec 31 17:00:36 BDT 2024","passed","Tue Dec 31 17:00:38 BDT 2024","","test-modules\workspace\my-worklist\feature.spec.ts","",""
-"","7633","Setup Login","setup","Tue Dec 31 17:00:26 BDT 2024","passed","Tue Dec 31 17:00:34 BDT 2024","","..\common\global.setup.ts","",""
-"","12518","Verify Z-A sorting order on the All Items page","DesktopChrome","Tue Dec 31 17:00:36 BDT 2024","passed","Tue Dec 31 17:00:48 BDT 2024","","test-modules\workspace\my-worklist\feature.spec.ts","",""

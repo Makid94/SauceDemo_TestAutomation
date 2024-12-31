@@ -12,7 +12,7 @@ jobs:
     timeout-minutes: 60
     strategy:
       matrix:
-        browser: [Desktop Chrome, Desktop Firefox, Desktop Safari]
+        browser: [DesktopChrome, DesktopFirefox, DesktopSafari]
 
     steps:
       # Step 1: Check out the code
@@ -44,15 +44,19 @@ jobs:
       - name: Install Allure Command Line
         run: npm install -g allure-commandline --save-dev
 
-      # Step 7: Run Playwright tests
+      # Step 7: Set the BROWSER environment variable
+      - name: Set BROWSER environment variable
+        run: echo "BROWSER=${{ matrix.browser }}" >> $GITHUB_ENV
+
+      # Step 8: Run Playwright tests
       - name: Run Playwright tests
         run: npx playwright test --project=${{ matrix.browser }}
 
-      # Step 8: Generate Allure Report
+      # Step 9: Generate Allure Report
       - name: Generate Allure Report
         run: allure generate ./test-results/allure-result --clean -o ./test-results/allure-report
 
-      # Step 9: Upload Allure Report
+      # Step 10: Upload Allure Report
       - name: Upload Allure Report
         uses: actions/upload-artifact@v4
         with:
