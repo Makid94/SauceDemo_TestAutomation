@@ -1,7 +1,6 @@
-import { defineConfig } from '@playwright/test';
-
+import { defineConfig, devices } from '@playwright/test';
 import * as os from 'node:os';
-import browserConfig from "./config/browser-config/browserConfig";
+import browserConfig from './config/browser-config/browserConfig';
 
 export default defineConfig({
   testDir: './tests',
@@ -16,14 +15,40 @@ export default defineConfig({
   use: {
     trace: 'on',
     video: 'off',
-    screenshot : 'on'
-    //screenshot: 'only-on-failure',
+    screenshot: 'on',
   },
   projects: [
     {
       name: 'setup',
       testDir: './',
       testMatch: 'global.setup.ts',
+    },
+    {
+      name: 'DesktopChrome',
+      use: {
+        ...devices['Desktop Chrome'],
+        storageState: 'playwright/.auth/auth.json',
+        headless: true,
+      },
+      dependencies: ['setup'],
+    },
+    {
+      name: 'DesktopFirefox',
+      use: {
+        ...devices['Desktop Firefox'],
+        storageState: 'playwright/.auth/auth.json',
+        headless: true,
+      },
+      dependencies: ['setup'],
+    },
+    {
+      name: 'DesktopSafari',
+      use: {
+        ...devices['Desktop Safari'],
+        storageState: 'playwright/.auth/auth.json',
+        headless: true,
+      },
+      dependencies: ['setup'],
     },
     {
       ...browserConfig,
