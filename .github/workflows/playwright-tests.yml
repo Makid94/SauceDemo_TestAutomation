@@ -55,7 +55,7 @@ jobs:
 
       # Step 9: Generate Allure Report
       - name: Generate Allure Report
-        run: allure generate ./test-results/allure-result --clean -o ./test-results/allure-report
+        run: allure generate ./test-report/allure-result --clean -o ./test-results/allure-report
 
       # Step 10: Upload Allure Report
       - name: Upload Allure Report

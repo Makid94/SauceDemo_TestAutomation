@@ -60,7 +60,7 @@ export default defineConfig({
     [
       'allure-playwright',
       {
-        resultsDir: 'test-reports/allure-result',
+        resultsDir: 'test-results/allure-result',  // Ensure this path is correct
         environmentInfo: {
           os_platform: os.platform(),
           os_release: os.release(),

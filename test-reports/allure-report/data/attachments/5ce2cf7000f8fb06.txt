@@ -1,0 +1,5 @@
+Deleted existing auth.json file.
+Navigating to: https://www.saucedemo.com/
+Logging in...
+Login successful.
+Authentication state saved.
