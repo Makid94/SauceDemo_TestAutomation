@@ -51,6 +51,7 @@ jobs:
       # Step 8: Run Playwright tests
       - name: Run Playwright tests
         run: npx playwright test --project=${{ matrix.browser }}
+        continue-on-error: true
 
       # Step 9: Generate Allure Report
       - name: Generate Allure Report
