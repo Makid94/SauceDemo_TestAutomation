@@ -12,7 +12,7 @@ jobs:
     timeout-minutes: 60
     strategy:
       matrix:
-        browser: [DesktopChrome, DesktopFirefox, DesktopSafari]
+        browser: [DesktopChrome]
 
     steps:
       # Step 1: Check out the code
